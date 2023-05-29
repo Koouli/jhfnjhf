@@ -1,14 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .conteiner{
     height: 300px;
     width: 100%;
     display: grid;
-    grid-template-columns: 3fr 5.7fr 3.3fr;
+    grid-template-columns: 3fr 5.6fr 3.4fr;
     margin: 2% 0%;
-    border-top:solid 2.5px #8ab7cf;
-    border-bottom:solid 2.5px #8ab7cf;
+    border-top:solid 4px #8ab7cf;
+    border-bottom:solid 4px #8ab7cf;
     overflow:hidden;
 }
 
@@ -36,12 +38,14 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 .acad-title, .contatos-title{
-    font-weight: 800;
+    font-weight: 600;
+    font-size: 1.3rem;
 }
-.name{
+.nome{
     padding-right: 2%;
     display: inline-block;
-    font-style: bold;
+    font-weight: 700;
+    font-size: 1.6rem;
 }
 .cont-2{
     height: 99%;
@@ -49,11 +53,13 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     padding: 2% 1%;
-    
 }
 .acad-title{
     margin-bottom: 2%;
     font-family: 'Nunito Sans', sans-serif;
+}
+.acad-list{
+    padding-right: 2% ;
 }
 .acad-list p{
 margin: 1% 0% 0% 3%;
@@ -90,4 +96,45 @@ font-weight: 400;
     display: block;
     width: 100%;
     font-family: 'Nunito Sans', sans-serif;
+}
+.title{
+    font-family: 'Montserrat';
+    font-size: 1.9rem;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    color: #2a2c24;
+    align-items: center;
+    align-content: center;
+    font-weight: 500;
+    padding-left: 4%;
+    margin-bottom: 1.5%;
+}
+.title-svg{
+    width: 1.8%;
+    position: relative;
+    margin-right: .5%;
+}
+.title-svg svg{
+    width: 100%;
+}
+.title p{
+    margin: 0%;
+}
+.pic-princ-membros{
+    position: relative;
+    width: 100%;
+    max-height: 60%;
+    border-bottom:solid 6px #DB481F;
+}
+.pic-princ-membros img{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+.princ-membros{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.1rem;
+    padding: 3% 2.3%;
 }

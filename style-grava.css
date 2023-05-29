@@ -1,0 +1,34 @@
+section.tl-conteiner{
+    position: relative;
+    width: 100%;
+    padding: 0% 6% 0% 13%;
+}
+.line{
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 5px;
+    margin-left: .4%;
+    background-color: #DB481F;
+    top: 0;
+    z-index: 0;
+}
+button.btn-tl{
+    background-color: #ee9f89;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    z-index: 3;
+}
+.popover-tl{
+    position: relative;
+    background-color: aliceblue;
+    display: inline-block
+}
+.popover-cont{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.video-tl{
+    display:inline-block;
+}
