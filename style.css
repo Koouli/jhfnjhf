@@ -238,6 +238,8 @@ main{
     transition: .5s;
 }
 .membro-img img{
+    object-fit:scale-down;
+    height: 100%;
     width: 100%;
     border-radius: 50%;
     
@@ -354,7 +356,7 @@ p#abt-1{
 
 .categorias-conteiner{
     width: 100%;
-    height: 115px;
+    height: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0% 2%;
