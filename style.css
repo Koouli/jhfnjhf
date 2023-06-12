@@ -201,7 +201,7 @@ main{
     display: flex;
     width: 98vw;
     height: 70vh;
-    margin-bottom: 2%;
+    margin: 2% 0%;
 
 }
 .membro-title{
@@ -209,10 +209,22 @@ main{
     top: 0%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    display: block;
+    display: flex;
     width: 100%;
     font-size: 1.6rem;
     left: 3%;
+    width: 100%;
+    flex-direction: row;
+    text-decoration: none;
+    color: #000000;
+    transition: .3s;
+}
+.membro-title:hover, .membro-title:hover .membro-title-svg{
+    opacity: 70%;
+}
+.membro-title-svg{
+    width: 1.5%;
+    margin: 0% 1.2%;
 }
 .cards-deco{
     margin: 4% 0% 0%;
@@ -325,19 +337,24 @@ p#abt-1{
 .about-pag{
     cursor: pointer;
     background-color: #e46046;
-    height: 15%;
-    display: inline-block;
+    height: 40px;
+    display: flex;
     color: #fffbed; 
-    padding: .5% 0% .5% 2%;
-    width: 24%;
+    width: 150px;
     margin: 1.5% 30%;
-}
-.about-pag a{
     text-decoration: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.about-pag p{
+    margin: 1% 0% 1% 2%;
 }
 .about-pag img{
     display: inline-block;
     width: 20%;
+    height: 80%;
+    margin-left: 1%;
 }
 .about-img{
     display: inline-flex;
@@ -415,4 +432,154 @@ p#abt-1{
 .categ-box.block-1:hover .over-block-1,
 .categ-box.block-2:hover .over-block-2{
     height: 0%;
+}
+@media(max-width:1100px){
+    .about-deco{
+        padding: 0% .5%;
+    }
+    .block-about{
+        margin-left:.5% ;
+    }
+    .about-cont{
+        padding-left: 5.5%;
+    }
+    .about-img{
+        width: 40%;
+    }
+    .about-img img{
+        object-fit: contain;
+        width: 100%;
+    }
+    #abt-3{
+        margin-top: 6%;
+    }
+}
+@media (max-width: 920px){
+    .about-deco{
+        height: 500px;
+    }
+    .block-about{
+        margin-top: 10%;
+        width: 4%;
+        height: 60%;
+    }
+    #abt-2, #abt-3{
+        font-size: 6.6rem
+    }
+    .about-cont{
+        padding-left: 5.2%;
+        display: flex;
+        flex-direction: column;
+    }
+    #abt-2{
+        margin-top:-8px;
+    }
+    .about-desc{
+        font-size: 1rem;
+    }
+    .about-pag{
+        position: absolute;
+        right: -350px;
+        bottom: 4%;
+    }
+
+}
+@media (max-width:850px){
+
+}
+@media (max-width:650px){
+    .about-deco{
+        height: fit-content;
+    }
+    .abt-big-title{
+        margin-bottom: 30%;
+    }
+    .about-img{
+        display: none;
+    }
+    .about-cont{
+        width: 100%;
+        padding-left: 8%;
+    }
+    .about-pag{
+        position: relative;
+        bottom: 0%;
+        right: auto;
+    }
+    #abt-2, #abt-3{
+        font-size: 7.1rem
+
+    }
+    #abt-3{
+        margin-bottom: 0%;
+    }
+    .block-about{
+        width: 6.5%;
+        height: 60%;
+        margin-top: 15%;
+    }
+    .about-desc{
+        font-size: 1rem;
+        margin: 0% 2%;
+        text-align: justify;
+        text-indent: 1rem;
+    
+    }
+    
+}
+@media (max-width:550px){
+    .abt-big-title{
+        margin-bottom: 36%;
+    }
+    .categorias-conteiner.grid.text-center{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .categ-box.block-1, .categ-box.block-2{
+        height: 90px;
+    }
+    .categ-box.block-1{
+        margin-bottom: 1.8%;
+    }
+}
+@media (max-width:450px){
+    .abt-big-title{
+        margin-bottom: 42%;
+    }
+    .block-about{
+        left: 25%;
+        width: 50%;
+        height: 6.5%;
+        margin-top: 0%;
+    }
+    .about-cont{
+        padding: 9% 2.5% 2% 2.5%;
+    }
+    #abt-2{
+        margin-top: 7%;
+    }
+    #abt-3{
+        margin-top: 7.5%;
+    }
+    #abt-2, #abt-3{
+        font-size: 7rem
+
+    }
+    
+}
+@media (max-width:400px){
+    .abt-big-title{
+        margin-bottom: 46%;
+    }
+    #abt-2, #abt-3{
+        font-size: 6.3rem
+
+    }
+    #abt-2{
+        margin-top: 8.5%;
+    }
+    #abt-3{
+        margin-top: 9%;
+    }
 }
