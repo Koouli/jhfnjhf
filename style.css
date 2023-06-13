@@ -42,14 +42,28 @@ header{
     height: 55%;
 }
 .icon{
-    width: 3.2%;
-    height: fit-content ;
+    width: 40px;
+    height: 40px;
     margin: 2%;
 }
+.logo-icon{
+    width: 45px;
+    height: 45px;
+    margin: 4% 5%;
+    margin-right: 0%;
+    visibility: hidden;
+}
 .icon svg{
+    object-fit: contain;
     width: 100%;
     height: 100%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.logo-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
 }
 .header-title{
     font-family: 'Righteous';
@@ -89,7 +103,6 @@ header #header-svg{
     font-size: 1.1rem;
     font-weight: 500;
     text-decoration: none;
-
 }
 .header-down-cont p a{
     text-decoration: none;
@@ -488,6 +501,38 @@ p#abt-1{
 
 }
 @media (max-width:650px){
+    header{
+        height: 20vh;
+        align-content: space-between;
+    }
+    .header-down{
+        height: 25%;
+        bottom: 0;
+    }
+    .header-title{
+        display: none;
+    }
+ 
+    .header-down-cont{
+        top: -50px;
+        color: #fffbed;
+        text-align: right;
+        padding-right: 13%;
+        font-weight: 600;
+    }
+    .header-down-cont p a{
+        color: #fffbed;
+        font-family: 'Montserrat';
+        font-weight: 600;
+    }
+    .icon{
+        width: 32px;
+        height: 32px;
+        margin: 27px 4%;
+    }
+    .logo-icon{
+        visibility: visible;
+    }
     .about-deco{
         height: fit-content;
     }
@@ -544,6 +589,17 @@ p#abt-1{
     }
 }
 @media (max-width:450px){
+    .header-down-cont p a{
+        font-size: 1rem;
+    }
+    .icon{
+        width: 29px;
+        height: 29px;
+        margin-right: 3%;
+    }
+    .logo-icon{
+        margin-left: 2%;
+    }
     .abt-big-title{
         margin-bottom: 42%;
     }

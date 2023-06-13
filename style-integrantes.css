@@ -96,6 +96,12 @@ font-weight: 400;
     height: 70%;
     object-fit: contain;
 }
+.contatos-icon img{
+    width: 50%;
+    height: 70%;
+    object-fit: contain;
+}
+
 .contatos-desc{
     margin-left: 3%;
     display: block;
