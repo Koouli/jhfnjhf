@@ -20,18 +20,18 @@
                 <p> Faça login para mais</p>
                 <p>Decolonialidade</p>
             </div>
-            <div class="cont-log">
+            <form class="cont-log" action="log.php" method="POST">
                 <div class="input-cont">
                     <div class="cont-block"></div>
                     <div class="input-box log">
-                        <input id="email" type="text"> 
+                        <input id="email" name="email" type="text"> 
                         <div class="input-title">Email</div>
                     </div>
                     <div class="input-box log">
-                        <input id="senha" type="text"> 
+                        <input id="senha" name="senha" type="password"> 
                         <div class="input-title">Senha</div>
                     </div>
-                    <button id="btn-login" class="btn-indic text-center">
+                    <button id="btn-login" class="btn-indic text-center" name="submit" type="submit">
                         Login
                     </button>
                     
@@ -49,7 +49,7 @@
                         </div>
                     </a>
                 </div>
-            </div>
+            </form>
 
         </div>  
     </main>
