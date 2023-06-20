@@ -1,7 +1,7 @@
 <?php
     $dbHost ='localhost';
     $dbUsername='root';
-    $dbPassword= '';
+    $dbPassword= 'aluno';
     $dbName = 'decolonialidade';
 
     $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
